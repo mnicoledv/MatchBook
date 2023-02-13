@@ -1,0 +1,85 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  @media screen and (min-width: 801px) {
+  
+      /* BANNER */
+    
+      .banner{
+        position: relative;
+        overflow: hidden;
+        padding: 50px;
+      }
+    
+      /* CATEGORY */
+  
+    .category-tile {
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        transition: all 0.3s;
+        margin-top: 30px;
+      }
+  
+      /* CARDS */
+      
+      .cards-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .card{
+        margin: 2rem;
+        width: calc(100%/3);
+        height: 35rem;
+        align-items: center;
+        justify-content: center;
+        border: none;
+      }
+    
+      .card-image-wrapper{
+        height: 22vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .card.footer{
+          background: none !important;
+      }
+      .button {
+          border: none;
+      }
+    
+    }
+    @media screen and (max-width: 800px) {
+  
+      /* CARDS */
+     .card:not(:first-child){
+       display: none;
+     }
+  
+     .cards-wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+   }
+   
+    /* CARDS 
+   
+   .card-image-wrapper img{
+     max-width: 100%;
+     max-height: 100%;
+   }
+   */
